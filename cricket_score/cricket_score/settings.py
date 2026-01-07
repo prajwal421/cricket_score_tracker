@@ -37,6 +37,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'accounts',
+    'teams',
+    'players',
+    'matches',
+    'scores',
+
 ]
 
 MIDDLEWARE = [
@@ -74,10 +80,15 @@ WSGI_APPLICATION = 'cricket_score.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'cricket_db',
+        'USER': 'root',
+        'PASSWORD': 'SV01@joshi',
+        'HOST': 'localhost',
+        'PORT': '3306',
     }
 }
+
 
 
 # Password validation
