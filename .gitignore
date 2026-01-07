@@ -1,0 +1,42 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# ===== Virtual Environment =====
+env/
+venv/
+.venv/
+
+# ===== Django =====
+*.log
+local_settings.py
+db.sqlite3
+media/
+
+# ===== Environment Variables =====
+.env
+.env.*
+
+# ===== IDEs =====
+.vscode/
+.idea/
+*.swp
+
+# ===== OS Files =====
+.DS_Store
+Thumbs.db
+
+# ===== Migrations (keep __init__.py only) =====
+*/migrations/*
+!*/migrations/__init__.py
+
+# ===== Test & Coverage =====
+htmlcov/
+.coverage
+.pytest_cache/
+
+# ===== Static Files (if collected) =====
+staticfiles/
