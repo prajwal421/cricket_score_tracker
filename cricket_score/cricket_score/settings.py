@@ -42,6 +42,10 @@ INSTALLED_APPS = [
     'players',
     'matches',
     'scores',
+    'rest_framework',
+    'drf_yasg',
+
+
 
 ]
 
@@ -81,11 +85,12 @@ WSGI_APPLICATION = 'cricket_score.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'cricket_db',
+        'NAME': 'nvr',
         'USER': 'root',
-        'PASSWORD': 'SV01@joshi',
+        'PASSWORD': 'root',
         'HOST': 'localhost',
         'PORT': '3306',
+
     }
 }
 
