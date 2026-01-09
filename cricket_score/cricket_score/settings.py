@@ -45,8 +45,6 @@ INSTALLED_APPS = [
     'rest_framework',
     'drf_yasg',
 
-
-
 ]
 
 MIDDLEWARE = [
@@ -82,12 +80,14 @@ WSGI_APPLICATION = 'cricket_score.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/6.0/ref/settings/#databases
 
+
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'nvr',
         'USER': 'root',
-        'PASSWORD': 'root',
+        'PASSWORD': 'prajwal123',
         'HOST': 'localhost',
         'PORT': '3306',
 
